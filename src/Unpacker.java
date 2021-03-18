@@ -74,7 +74,8 @@ public class Unpacker {
                 if (!(((input.charAt(i+1) >='0') && (input.charAt(i+1) <= '9'))||(input.charAt(i+1)=='[')))
                     return false;
                 if(input.charAt(i)=='['){
-                    if (((input.charAt(i-1) >='0') && (input.charAt(i-1) <= '9'))&&(i>0))
+                    if(i>0)
+                    if (((input.charAt(i-1) >='0') && (input.charAt(i-1) <= '9')))
             numl++;}
             if (input.charAt(i)==']'){
                 numr++;
